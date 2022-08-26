@@ -1,0 +1,104 @@
+.contacts-list {
+    list-style: none;
+}
+
+.contact {
+    background-color: var(--contact-color);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.7rem 0;
+    padding: 0 0.3rem;
+    border-radius: 20px;
+}
+
+.contact-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+}
+
+.contact-img img {
+    width: 90%;
+    height: 90%;
+}
+
+.contact h2 {
+    margin: 0;
+    text-align: left;
+}
+
+.contact p {
+    margin: 0;
+}
+
+.contact-text {
+    flex-grow: 3;
+}
+
+.contact-delete {
+    background-color: transparent;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: none;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.7s all;
+}
+
+.contact-delete img {
+    height: 50%;
+}
+
+.contact-delete:hover {
+    background-color: var(--main-color);
+}
+
+.add-contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.add-contact button {
+    position: relative;
+    height: 5rem;
+    width: 5rem;
+    margin: 1rem 0;
+    border: none;
+    background-color: var(--card-color);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.add-contact button img {
+    height: 70%;
+}
+
+.add-contact button:hover::before {
+    content: 'Новый контакт';
+    text-transform: uppercase;
+    position: absolute;
+    height: 3rem;
+    width: 7rem;
+    background-color: var(--card-color);
+    color: var(--main-color);
+    left: -7.3rem;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
